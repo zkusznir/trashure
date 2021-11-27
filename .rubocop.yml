@@ -1,0 +1,18 @@
+require:
+  - rubocop-rails
+    
+AllCops:
+  DisplayCopNames: true
+  TargetRubyVersion: 3.0.3
+  NewCops: enable
+  SuggestExtensions: false
+  Exclude:
+    - db/schema.rb
+    - bin/spring
+    - vendor/**/*
+    - bin/*
+    - db/migrate/*.rb
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+  Enabled: true
