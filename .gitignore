@@ -25,3 +25,7 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# Ignore local file storage that is used for development phase.
+# TODO: Move local to external storage once app is deployed).
+/public/uploads
