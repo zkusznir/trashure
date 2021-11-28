@@ -1,0 +1,17 @@
+{
+  "description": "Treasure details",
+  "type": "object",
+  "properties": {
+    "id": { "type": "integer" },
+    "name": { "type": "string" },
+    "description": { "type": ["string", null] },
+    "latitude": { "type": "number" },
+    "longitude": { "type": "number" },
+    "created_at": { "type": "string" },
+    "user_id": { "type": "integer" },
+    "photos": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

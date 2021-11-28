@@ -1,0 +1,17 @@
+# frozen_string_literal: true
+
+json = @treasure.slice(
+  :id,
+  :name,
+  :description,
+  :latitude,
+  :longitude,
+  :created_at,
+  :user_id
+)
+
+json[:photos] = @treasure.photos.map do |photo|
+  photo.image.url(host: Rails.application.credentials[Rails.env.to_sym][:host_url])
+end
+
+json

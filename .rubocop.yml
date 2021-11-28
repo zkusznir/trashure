@@ -1,6 +1,7 @@
 require:
   - rubocop-rails
-    
+  - rubocop-rspec
+
 AllCops:
   DisplayCopNames: true
   TargetRubyVersion: 3.0.3
@@ -16,3 +17,6 @@ AllCops:
 Style/StringLiterals:
   EnforcedStyle: double_quotes
   Enabled: true
+
+Style/Documentation:
+  Enabled: false
